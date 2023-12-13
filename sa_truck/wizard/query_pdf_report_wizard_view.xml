@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+        <record id="pdf_report_quary_wizard_view_form_id" model="ir.ui.view">
+            <field name="name">pdf.report.quary.wizard.view.form.id</field>
+            <field name="model">pdf.report.quary.wizard.query</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="start_date_date" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+		
+		<record id="query_pdf_report_wizard_action" model="ir.actions.act_window">
+            <field name="name">PDF-Quary Report</field>
+            <field name="res_model">pdf.report.quary.wizard.query</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>
